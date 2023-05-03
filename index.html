@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dog rescue" />
+    <meta name="author" content="James Kaleb Lamar" />
+    <script
+      src="https://kit.fontawesome.com/5c1c4101a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <title>Star Rescue</title>
+  </head>
+  <body>
+    <!-- ========================= -->
+    <!-- HAMBURGER -->
+    <!-- ========================= -->
+
+    <div class="hamburgerContainer">
+      <span class="hamburger" id="bar1"></span>
+      <span class="hamburger" id="bar2"></span>
+      <span class="hamburger" id="bar3"></span>
+    </div>
+
+    <!-- ============================ -->
+    <!-- MOBILE MENU -->
+    <!-- ============================ -->
+
+    <div class="mobileMenu">
+      <div class="menuGrid">
+        <div class="gridBox">
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="gridBox"><a href="#">About</a></div>
+        <div class="gridBox"><a href="#">Forms</a></div>
+        <div class="gridBox"><a href="#">News</a></div>
+        <div class="gridBox"><a href="#">Contact</a></div>
+      </div>
+    </div>
+
+    <nav>
+      <img
+        class="logo"
+        src="./Images/star logo.png"
+        alt=""
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      />
+      <ul data-aos="fade-left" data-aos-duration="1500">
+        <li><a class="animated" href="#">Home</a></li>
+        <li id="showAbout">
+          <a class="animated" href="#">About</a>
+
+          <div class="dropDownAbout">
+            <a href="">Board of Directors</a>
+            <a href="">Rescue</a>
+            <a href="">Volunteer</a>
+          </div>
+        </li>
+        <li id="showForm">
+          <a class="animated" href="#">Forms</a>
+
+          <div class="dropDown">
+            <a href="">Surrender Form</a>
+            <a href="">Membership Form</a>
+          </div>
+        </li>
+
+        <li><a class="animated" href="#">News & Events</a></li>
+        <li><a class="animated" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="heroBox">
+        <h1 class="hero rescue">Rescue:</h1>
+        <div class="typeWriter">
+          <h1 class="hero loyal"></h1>
+          <span class="caret"></span>
+        </div>
+        <button>Donate</button>
+      </div>
+      <img
+        src="./Images/marissa-deck-AsIaznAyBMY-unsplash.jpg"
+        alt=""
+        class="dog1 carousel"
+      />
+      <img
+        src="./Images/eric-ward-ISg37AI2A-s-unsplash.jpg"
+        alt=""
+        class="dog2 carousel"
+      />
+
+      <img
+        src="./Images/james-barker-v3-zcCWMjgM-unsplash.jpg"
+        alt=""
+        class="dog2 carousel"
+      />
+      <img
+        src="./Images/joe-caione-qO-PIF84Vxg-unsplash.jpg"
+        alt=""
+        class="dog2 carousel"
+      />
+    </header>
+
+    <section id="about">
+      <div
+        class="aboutContainer box1"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <h1 data-aos="zoom-in" data-aos-duration="1500">
+          Saving the Animals of Rowan
+        </h1>
+      </div>
+      <div
+        class="aboutContainer box2 box"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <img src="./Images/starDogs.jpeg" alt="" />
+        <p>
+          Saving the Animals of Rowan (STAR) is a 501c3 non-profit dog rescue
+          organization committed to improving the conditions for the abandoned
+          dogs of Rowan County, Kentucky. We operate on donations and an
+          occasional grant.
+        </p>
+      </div>
+      <div
+        class="aboutContainer box3 box"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <img src="./Images/personWDog.jpeg" alt="" />
+        <p>
+          Donations are tax deductible and go toward vet bills, transport costs,
+          boarding costs, and general operation expenses. We saved over 900 dogs
+          in 2016 thanks to the generosity of community members and local
+          businesses.
+        </p>
+      </div>
+      <div
+        class="aboutContainer box4 box"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <img src="./Images/personWdog2.jpeg" alt="" />
+        <p>
+          Our shelter building is where animals with secured rescue awaiting
+          transport stay temporarily (typically less than a week). Last year, we
+          received enough donations to make much-needed repairs to our kennel
+          space. We were also able to replace our aging transport van!
+        </p>
+      </div>
+      <div
+        class="aboutContainer box5"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
+        <h2>Our Mission!</h2>
+        <p>
+          Our mission is to save the lives of the dogs at the Tri-County Animal
+          Shelter in Morehead, Kentucky and to help educate the public about the
+          importance of spay/neuter, vaccinations, and heartworm/fecal testing
+          for the health of their dogs.
+        </p>
+      </div>
+    </section>
+
+    <section id="form">
+      <div
+        class="imgContainer"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      ></div>
+      <form action="" data-aos="zoom-in" data-aos-duration="1500">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" />
+        <label for="emial">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" />
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Subject" />
+        <label for="message">Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+        ></textarea>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+
+    <footer>
+      <div class="footerContainer" data-aos="zoom-in" data-aos-duration="1500">
+        <ul>
+          <h4>Site Map</h4>
+          <li><a class="animated" href="#">Home</a></li>
+          <li><a class="animated" href="#">Forms</a></li>
+          <li><a class="animated" href="#">News & Events</a></li>
+          <li><a class="animated" href="#">Contact</a></li>
+        </ul>
+        <div class="address">
+          <h4>Mailing Address</h4>
+          <address>PO Box 454 Morehead, Kentucky 40351</address>
+        </div>
+        <div class="footerContact">
+          <h4>Contact</h4>
+          <a href="star@stardogrescue.org">star@stardogrescue.org</a>
+
+          <div class="social">
+            <a class="animated" href="#"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="animated" href="#"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
