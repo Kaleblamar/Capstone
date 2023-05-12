@@ -318,11 +318,14 @@ address,
   align-items: center;
   font-size: 35px;
 }
+
 .fa-youtube {
-  color: #333;
+  color: red;
 }
 .fa-facebook {
-  color: #333;
+  color: #4267b2;
+  /* background-color: white;
+  border-radius: 100%; */
 }
 
 /* =============================== */
@@ -419,6 +422,7 @@ address,
   width: 100%;
   height: 100%;
 }
+
 /* ==================================== */
 /* MEDIA QUERIES */
 /* ==================================== */

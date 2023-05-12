@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dog rescue" />
+    <meta name="author" content="James Kaleb Lamar" />
+    <script
+      src="https://kit.fontawesome.com/5c1c4101a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="forms.css" />
+    <script defer src="./form.js"></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="./Images/star logo.png"
+        alt=""
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      />
+      <ul data-aos="fade-left" data-aos-duration="1500">
+        <li><a class="animated" href="./index.html">Home</a></li>
+        <li id="showAbout">
+          <a class="animated" href="./index.html#about">About</a>
+
+          <div class="dropDownAbout">
+            <a href="./board.html">Board of Directors</a>
+            <!-- <a href="">Rescue</a>
+            <a href="">Volunteer</a> -->
+          </div>
+        </li>
+        <li id="showForm">
+          <a class="animated" href="#">Forms</a>
+
+          <div class="dropDown">
+            <a href="">Surrender Form</a>
+            <a href="">Membership Form</a>
+            <a href="">Rescue</a>
+            <a href="">Volunteer</a>
+          </div>
+        </li>
+
+        <li><a class="animated" href="#">News & Events</a></li>
+        <li><a class="animated" href="./index.html#form">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="buttons">
+        <button id="volunteer">Volunteer Form</button>
+        <button id="rescue">Rescue Form</button>
+        <button id="membership">Membership Form</button>
+        <button id="surrender">Surrender Form</button>
+      </div>
+
+      <fieldset id="field">
+        <legend>Membership Application</legend>
+        <form>
+          <div id="form1">
+            <div class="box1">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="First Name" />
+
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last Name" />
+
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" placeholder="Phone Number" />
+
+              <label for="city">City, State</label>
+              <input type="text" id="city" placeholder="city" />
+            </div>
+
+            <div class="box2">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="email" />
+
+              <label for="username">username</label>
+              <input type="text" placeholder="username" />
+
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
+
+              <label for="confirmPassword">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="confirmPassword"
+                placeholder="confirm password"
+              />
+            </div>
+          </div>
+          <div id="formMem">
+            <h3>Areas of Interest</h3>
+            <div class="areasOfInterest">
+              <p>
+                As a member, I volunteer to help S.T.A.R. in the following
+                area(s)
+              </p>
+              <h4>Foster</h4>
+              <div class="checkBoxDiv">
+                <span>
+                  <input type="checkbox" name="fosterShort" id="fosterShort" />
+                  <label for="fosterShort"
+                    >Fostering - Short term - (under two weeks)</label
+                  >
+                </span>
+                <span>
+                  <input type="checkbox" name="fosterLong" id="fosterLong" />
+                  <label for="fosterLong"
+                    >Fostering - Long term - (over two weeks)</label
+                  >
+                </span>
+              </div>
+              <h4>Fundraising</h4>
+              <p>
+                Activities include helping to promote events; baking/cooking for
+                events; picking up or delivering items for events; working at
+                events.
+              </p>
+              <div class="checkBoxDiv2">
+                <input type="checkbox" name="fundraise" id="fundraise" />
+                <label for="fundraise"
+                  >I'm interested in helping fundraise.</label
+                >
+              </div>
+
+              <h4>Transports</h4>
+              <div class="checkBoxDiv3">
+                <span>
+                  <input type="checkbox" name="localDriver" id="localDriver" />
+                  <label for="localDriver"
+                    >Local Driver - Driving dogs to and from local vets; to
+                    foster homes; and/or local boarding facilities.</label
+                  >
+                </span>
+                <span>
+                  <input
+                    type="checkbox"
+                    name="longDistance"
+                    id="longDistance"
+                  />
+                  <label for="longDistance"
+                    >Long Distance Transport - Transporting within a 120 mile
+                    radius; or transporting to rescues located in bordering or
+                    other states.</label
+                  >
+                </span>
+                <span>
+                  <input type="checkbox" name="loadingCrew" id="loadingCrew" />
+                  <label for="loadingCrew"
+                    >Loading Crew - Preparing a transport vehicle; to include
+                    loading, securing and prepping the crates.</label
+                  >
+                </span>
+                <span>
+                  <input
+                    type="checkbox"
+                    name="cleaningCrew"
+                    id="cleaningCrew"
+                  />
+                  <label for="cleaningCrew"
+                    >Cleaning Crew - Includes cleaning dog crates after
+                    transports; cleaning the inside the transport vehicles;
+                    laundry as needed.</label
+                  >
+                </span>
+              </div>
+            </div>
+            <!-- <h3>Availability</h3> -->
+            <div class="formBox formBoxRescue">
+              <label for="available">Availability</label>
+              <select name="schedule" id="schedule">
+                <option hidden>Click here to see options</option>
+                <option value="monday am">Monday-AM</option>
+                <option value="monday pm">Monday-PM</option>
+                <option value="tuesday am">Tuesday-AM</option>
+                <option value="tuesday pm">Tuesday-PM</option>
+                <option value="wednesday am">Wednesday-AM</option>
+                <option value="wednesday pm">Wednesday-PM</option>
+                <option value="thursday">Thursday-AM</option>
+                <option value="thursday pm">Thursday-PM</option>
+                <option value="friday am">Friday-AM</option>
+                <option value="friday pm">Friday-PM</option>
+                <option value="saturday am">Saturday-AM</option>
+                <option value="saturday pm">Saturday-PM</option>
+                <option value="sunday am">Sunday-AM</option>
+                <option value="sunday pm">Sunday-PM</option>
+              </select>
+            </div>
+          </div>
+
+          <h3>Type of Membership</h3>
+          <select name="memType" id="memType">
+            <option value="regular">Regular Membership - $12</option>
+            <option value="student">Student Membership - $6</option>
+          </select>
+          <p>
+            By signing this Agreement, I will actively participate in the areas
+            I have selected above.
+          </p>
+          <span class="signiture">
+            <input
+              type="text"
+              id="signiture"
+              placeholder="Electronic signiture"
+            />
+            <input type="date" />
+          </span>
+          <div class="submitBox">
+            <input type="submit" value="Register" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </fieldset>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

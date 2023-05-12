@@ -604,10 +604,12 @@ address,
   font-size: 35px;
 }
 .fa-youtube {
-  color: #333;
+  color: red;
 }
 .fa-facebook {
-  color: #333;
+  color: #4267b2;
+  /* background-color: white;
+  border-radius: 100%; */
 }
 
 /* .box2 p {
