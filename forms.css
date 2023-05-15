@@ -28,6 +28,8 @@ nav {
   padding: 10px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.402);
+  margin-bottom: 50px;
+  position: relative;
 }
 nav ul {
   display: flex;
@@ -137,25 +139,30 @@ nav ul li:nth-of-type(3) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  /* align-self: ; */
   gap: 30px;
   height: 50%;
+  padding: 10px;
 }
 
 button {
   padding: 15px;
   border: none;
   border-radius: 5px;
-  background-color: var(--darker);
+  /* background-color: var(--darker); */
+  background-color: rgb(16, 15, 15);
   color: var(--orange);
   width: 200px;
   cursor: pointer;
-  box-shadow: 0 0 10px var(--orange);
+  box-shadow: 0 0 2px var(--orange);
   font-family: var(--font-family);
   transition: 0.3s ease-in-out;
 }
+button:hover {
+  /* transform: scale(0.9); */
+}
 button:active {
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
 }
 
 /* ======================= */
@@ -169,12 +176,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-image: linear-gradient(45deg, var(--darker), black);
+  background-image: linear-gradient(45deg, black, var(--darker), black);
   border: none;
   border-radius: 10px;
   transition: 1.2s ease-in-out;
   outline: none;
-
   box-shadow: 0 0 5px var(--orange);
 }
 form {
@@ -227,6 +233,7 @@ input[type="tel"],
 input[type="submit"],
 input[type="reset"],
 input[type="date"],
+input[type="url"],
 #select,
 #schedule,
 #memType,
@@ -245,7 +252,7 @@ textarea {
   color: white;
 }
 ::placeholder {
-  color: white;
+  color: lightgrey;
 }
 #select,
 option {
@@ -260,20 +267,27 @@ label {
   color: var(--light);
 }
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  /* height: 100vh;
+  width: 100vw; */
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  /* transform: perspective(2000px); */
-  /* transform-style: preserve-3d; */
+  background-image: linear-gradient(
+    -25deg,
+    black,
+    hsl(269, 98%, 10%),
+    black,
+    hsl(269, 98%, 10%),
+    black
+  );
+  position: relative;
 }
 
 .scale {
   transform: scale(1.5);
 }
 .slide {
-  animation: slide 1.5s ease;
+  animation: slide 1.5s ease-in-out;
 }
 @keyframes slide {
   0% {
@@ -334,4 +348,145 @@ h3 {
 }
 .areasOfInterest label {
   color: white;
+}
+
+/* ================================= */
+/* FOOTER */
+/* ================================= */
+footer {
+  /* width: calc(100% - 100px); */
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.footerContainer {
+  width: calc(100% - 100px);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.footerContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+.footerContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, black, transparent);
+}
+
+.footerContact,
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.footerContact {
+  color: white;
+  font-family: var(--font-family);
+}
+.address {
+  color: white;
+  font-family: var(--font-family);
+}
+footer ul {
+  height: 50%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  z-index: 2;
+}
+
+h4 {
+  font-size: 20px;
+  color: var(--orange);
+  font-family: var(--font-family);
+}
+
+address,
+.footerContact a {
+  color: var(--light);
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 35px;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-facebook {
+  color: #4267b2;
+  /* background-color: white;
+  border-radius: 100%; */
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, black, transparent);
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to top, black, transparent);
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, black, transparent);
 }

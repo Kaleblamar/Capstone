@@ -101,6 +101,8 @@ h1 {
   height: 150px;
   border-radius: 150px;
   object-fit: cover;
+  filter: drop-shadow(0 0 2px var(--orange));
+  animation: move 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
 }
 h6 {
   color: var(--orange);
@@ -489,5 +491,17 @@ address,
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(0, 10px);
   }
 }

@@ -5,13 +5,16 @@ const res = document.querySelector(`#rescue`);
 const member = document.querySelector(`#membership`);
 const sur = document.querySelector(`#surrender`);
 const field = document.querySelector(`#field`);
-
+const volLink = document.querySelector(`#rescueLink`);
+field.style.display = `none`;
 vol.addEventListener(`click`, displayVol);
 res.addEventListener(`click`, displayRes);
 member.addEventListener(`click`, displayMem);
 sur.addEventListener(`click`, displaySur);
+volLink.addEventListener(`click`, displayVol);
 
 function displayRes() {
+  field.style.display = `flex`;
   res.classList.add(`scale`);
   vol.classList.remove(`scale`);
   member.classList.remove(`scale`);
@@ -65,13 +68,13 @@ function displayRes() {
           <div id="form2">
             <div class="formBox formBoxRescue">
               <label for="rescueName">Rescue Name</label>
-              <input type="text" name="rescueName" id="rescueName" />
+              <input type="text" name="rescueName" id="rescueName" placeholder="Enter name of animal "  />
 
-              <label for="rescueAddress">rescue Address</label>
-              <input type="text" name="rescueAddress" id="rescueAddress" />
+              <label for="rescueAddress">Rescue Address</label>
+              <input type="text" name="rescueAddress" id="rescueAddress" placeholder="Enter Address" />
 
-              <label for="rescueSite">rescue Website</label>
-              <input type="text" name="rescueSite" id="rescueSite" />
+              <label for="rescueSite">Rescue Website</label>
+              <input type="url" placeholder="Enter URL" name="rescueSite" id="rescueSite" />
             </div>
             <div class="formBox formBoxRescue">
               <label for="peopleInfo"
@@ -103,6 +106,7 @@ function displayRes() {
 }
 
 function displayVol() {
+  field.style.display = `flex`;
   vol.classList.add(`scale`);
   res.classList.remove(`scale`);
   member.classList.remove(`scale`);
@@ -203,6 +207,7 @@ function displayVol() {
 }
 
 function displayMem() {
+  field.style.display = `flex`;
   vol.classList.remove(`scale`);
   res.classList.remove(`scale`);
   member.classList.add(`scale`);
@@ -389,43 +394,83 @@ function displaySur() {
   });
   field.innerHTML = ``;
   field.innerHTML = `<legend>Surrender Form</legend>
+        <form>
+          <div id="form1">
+            <div class="box1">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="First Name" />
 
-        <form id="form1">
-          
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" placeholder="First Name" />
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last Name" />
 
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" placeholder="Last Name" />
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" placeholder="Phone Number" />
 
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" id="phoneNumber" placeholder="Phone Number" />
+              <label for="city">City, State</label>
+              <input type="text" id="city" placeholder="city" />
+            </div>
 
-            <label for="city">City, State</label>
-            <input type="text" id="city" placeholder="city" />
+            <div class="box2">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="email" />
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="email" />
+              <label for="username">username</label>
+              <input type="text" placeholder="username" />
 
-            <label for="username">username</label>
-            <input type="text" placeholder="username" />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+              />
 
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="password"
-            />
+              <label for="confirmPassword">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="confirmPassword"
+                placeholder="confirm password"
+              />
+            </div>
+          </div>
+          <div id="form2">
+            <div class="formBox formBoxRescue">
+              <label for="rescueName">Surrender Name</label>
+              <input type="text" name="rescueName" id="rescueName" />
 
-            <label for="confirmPassword">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="confirmPassword"
-              placeholder="confirm password"
-            />
-          
+              <label for="rescueAddress">Rescue Address</label>
+              <input type="text" name="rescueAddress" id="rescueAddress" />
+
+              <label for="rescueSite">Surrender Website</label>
+              <input type="text" name="rescueSite" id="rescueSite" />
+            </div>
+            <div class="formBox formBoxRescue">
+              <label for="peopleInfo"
+                >People that may work under your surrender name</label
+              >
+              <textarea
+                name="peopleInfo"
+                id="peopleInfo"
+                cols="30"
+                rows="5"
+              ></textarea>
+
+              <label for="comments"
+                >People that may work under your Surrender name</label
+              >
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <div class="submitBox">
+            <input type="submit" value="Register" />
+            <input type="reset" value="Reset" />
+          </div>
         </form>`;
 }
 
