@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dog rescue" />
+    <meta name="author" content="James Kaleb Lamar" />
+
+    <script
+      src="https://kit.fontawesome.com/5c1c4101a5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./calender.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="../script.js"></script>
+    <title>News & Events</title>
+  </head>
+  <body>
+    <!-- ========================= -->
+    <!-- HAMBURGER -->
+    <!-- ========================= -->
+
+    <div class="hamburgerContainer">
+      <span class="hamburger" id="bar1"></span>
+      <span class="hamburger" id="bar2"></span>
+      <span class="hamburger" id="bar3"></span>
+    </div>
+
+    <!-- ============================ -->
+    <!-- MOBILE MENU -->
+    <!-- ============================ -->
+
+    <div class="mobileMenu">
+      <div class="menuGrid">
+        <div class="gridBox">
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="gridBox"><a href="../index.html#about">About</a></div>
+        <div class="gridBox"><a href="../forms.html">Forms</a></div>
+        <div class="gridBox"><a href="#">News</a></div>
+        <div class="gridBox"><a href="../dogBreeds.html">Dog Breeds</a></div>
+        <div class="gridBox"><a href="../index.html#form">Contact</a></div>
+      </div>
+    </div>
+    <!-- =========================== -->
+    <!-- NAV -->
+    <!-- ========================== -->
+
+    <nav>
+      <img
+        class="logo"
+        src="../Images/star logo.png"
+        alt=""
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      />
+      <ul data-aos="fade-left" data-aos-duration="1500">
+        <li><a class="animated" href="../index.html">Home</a></li>
+        <li id="showAbout">
+          <a class="animated" href="../index.html#about">About</a>
+
+          <div class="dropDownAbout">
+            <a href="../board.html">Board of Directors</a>
+            <!-- <a href="">Rescue</a>
+            <a href="">Volunteer</a> -->
+          </div>
+        </li>
+        <li id="showForm">
+          <a class="animated" href="../forms.html">Forms</a>
+
+          <div class="dropDown">
+            <a href="">Surrender Form</a>
+            <a href="">Membership Form</a>
+            <a href="">Rescue</a>
+            <a href="">Volunteer</a>
+          </div>
+        </li>
+
+        <li><a class="animated" href="#">News & Events</a></li>
+        <li><a class="animated" href="../dogBreeds.html">Dog Breeds</a></li>
+        <li><a class="animated" href="../index.html#form">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- partial:index.partial.html -->
+    <body onload="startTime()">
+      <div class="calenderBox" data-aos="slide-down" data-aos-duration="1500">
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <div class="contentfront">
+                <div class="month">
+                  <table>
+                    <tr class="orangeTr">
+                      <th>M</th>
+                      <th>T</th>
+                      <th>W</th>
+                      <th>T</th>
+                      <th>F</th>
+                      <th>S</th>
+                      <th>S</th>
+                    </tr>
+                    <tr class="whiteTr">
+                      <th></th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>5</th>
+                      <th>6</th>
+                    </tr>
+                    <tr class="whiteTr">
+                      <th>7</th>
+                      <th>8</th>
+                      <th>9</th>
+                      <th>10</th>
+                      <th>11</th>
+                      <th>12</th>
+                      <th>13</th>
+                    </tr>
+                    <tr class="whiteTr">
+                      <th>14</th>
+                      <th>15</th>
+                      <th>16</th>
+                      <th>17</th>
+                      <th>18</th>
+                      <th>19</th>
+                      <th>20</th>
+                    </tr>
+                    <tr class="whiteTr">
+                      <th>21</th>
+                      <th>22</th>
+                      <th>23</th>
+                      <th>24</th>
+                      <th>25</th>
+                      <th>26</th>
+                      <th>27</th>
+                    </tr>
+                    <tr class="whiteTr">
+                      <th>28</th>
+                      <th>29</th>
+                      <th>30</th>
+                      <th>31</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </table>
+                </div>
+                <div class="date">
+                  <img
+                    src="../Images/joe-caione-qO-PIF84Vxg-unsplash.jpg"
+                    alt=""
+                    class="dog"
+                  />
+                  <div class="datecont">
+                    <div class="date-day-month-box">
+                      <div class="dateBox">
+                        <div id="date"></div>
+                      </div>
+                      <div class="day-month-box">
+                        <div id="day"></div>
+                        <div id="month"></div>
+                      </div>
+                    </div>
+                    <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="contentback">
+                <div class="backcontainer">
+                  <h2>No Events This Month</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div
+          class="footerContainer"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <ul>
+            <h4>Site Map</h4>
+            <li><a class="animated" href="#">Home</a></li>
+            <li><a class="animated" href="../index.html#about">About</a></li>
+            <li><a class="animated" href="./forms.html">Forms</a></li>
+            <li><a class="animated" href="#">News & Events</a></li>
+            <li><a class="animated" href="../dogBreeds.html">Dog Breeds</a></li>
+            <li><a class="animated" href="../index.html#form">Contact</a></li>
+          </ul>
+          <div class="address">
+            <h4>Mailing Address</h4>
+            <address>PO Box 454 Morehead, Kentucky 40351</address>
+          </div>
+          <div class="footerContact">
+            <h4>Contact</h4>
+            <a href="star@stardogrescue.org">star@stardogrescue.org</a>
+
+            <div class="social">
+              <a class="animated" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="animated" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./calender.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

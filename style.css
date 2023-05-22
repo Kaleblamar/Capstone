@@ -128,7 +128,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 33%;
+  width: 40%;
   list-style: none;
 }
 
@@ -642,6 +642,11 @@ address,
 /* ==================================== */
 /* MEDIA QUERIES */
 /* ==================================== */
+@media (max-width: 1040px) {
+  nav ul {
+    width: 60%;
+  }
+}
 
 @media (max-width: 768px) {
   nav {

@@ -11,10 +11,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="forms.css" />
-    <script defer src="./form.js"></script>
+    <link rel="stylesheet" href="./dogBreeds.css" />
+    <script defer src="./dogBreed.js"></script>
 
-    <title>Forms</title>
+    <title>Dog Breeds</title>
   </head>
   <body>
     <!-- ========================= -->
@@ -38,7 +38,7 @@
         </div>
         <div class="gridBox"><a href="#about">About</a></div>
         <div class="gridBox"><a href="./forms.html">Forms</a></div>
-        <div class="gridBox"><a href="./Calendar/calender.html">News</a></div>
+        <div class="gridBox"><a href="#">News</a></div>
         <div class="gridBox"><a href="./dogBreeds.html">Dog Breeds</a></div>
         <div class="gridBox"><a href="#form">Contact</a></div>
       </div>
@@ -67,39 +67,89 @@
           </div>
         </li>
         <li id="showForm">
-          <a class="animated" href="#">Forms</a>
+          <a class="animated" href="./forms.html">Forms</a>
 
           <div class="dropDown">
-            <a id="surrenderLink" href="./forms.html">Surrender Form</a>
-            <a id="membershipLink" href="./forms.html">Membership Form</a>
-            <a id="rescueLink" href="./forms.html">Rescue</a>
-            <a id="volunteerLink" href="./forms.html">Volunteer</a>
+            <a href="">Surrender Form</a>
+            <a href="">Membership Form</a>
+            <a href="">Rescue</a>
+            <a href="">Volunteer</a>
           </div>
         </li>
 
         <li>
           <a class="animated" href="./Calendar/calender.html">News & Events</a>
         </li>
-          <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
+        <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
         <li><a class="animated" href="./index.html#form">Contact</a></li>
       </ul>
     </nav>
-    <div class="wrapper">
-      <div class="mobileBtns">
-        <button id="volunteerMobile">Volunteer Form</button>
-        <button id="rescueMobile">Rescue Form</button>
-        <button id="membershipMobile">Membership Form</button>
-        <button id="surrenderMobile">Surrender Form</button>
-      </div>
 
-      <div class="buttons">
-        <button id="volunteer">Volunteer Form</button>
-        <button id="rescue">Rescue Form</button>
-        <button id="membership">Membership Form</button>
-        <button id="surrender">Surrender Form</button>
-      </div>
+    <header>
+      <h1>Dog Breeds</h1>
+    </header>
+    <div class="wrap">
+      <section id="template">
+        <!-- <div class="card">
+        <div class="imgContainer">
+          <img
+            src="https://api-ninjas.com/images/dogs/golden_retriever.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <h3>Golden Retriever</h3>
+          <div class="stats">
+            <ul>
+              <li>Friendliness: <span></span></li>
+              <li>Shedding: <span></span></li>
+              <li>Playfullness: <span></span></li>
+              <li>Energy: <span></span></li>
+              <li>Potectivness: <span></span></li>
+              <li>Intelligence: <span></span></li>
+            </ul>
 
-      <fieldset class="field" id="field"></fieldset>
+            <ul>
+              <li>Life-Expectancy: <span></span></li>
+              <li>Male Height: <span></span></li>
+              <li>Male Weight: <span></span></li>
+              <li>Female Height: <span></span></li>
+              <li>Female Weight: <span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+
+        <!-- <div class="card">
+        <div class="imgContainer">
+          <img
+            src="https://api-ninjas.com/images/dogs/golden_retriever.jpg"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <h3>Golden Retriever</h3>
+          <div class="stats">
+            <ul>
+              <li>Friendliness <span></span></li>
+              <li>Shedding <span></span></li>
+              <li>Playfullness <span></span></li>
+              <li>Energy <span></span></li>
+              <li>Potectivness <span></span></li>
+              <li>Intelligence <span></span></li>
+            </ul>
+
+            <ul>
+              <li>Life-Expectancy <span></span></li>
+              <li>Male Height <span></span></li>
+              <li>Male Weight <span></span></li>
+              <li>Female Height <span></span></li>
+              <li>Female Weight <span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+      </section>
     </div>
 
     <footer>
@@ -109,11 +159,11 @@
           <li><a class="animated" href="#">Home</a></li>
           <li><a class="animated" href="#about">About</a></li>
           <li><a class="animated" href="./forms.html">Forms</a></li>
+          <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
           <li>
             <a class="animated" href="./Calendar/calender.html"
               >News & Events</a
             >
-              <li><a class="animated" href="./dogBreeds.html">Dog Breeds</a></li>
           </li>
           <li><a class="animated" href="#form">Contact</a></li>
         </ul>
@@ -136,6 +186,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
