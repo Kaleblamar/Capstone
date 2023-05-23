@@ -9,6 +9,9 @@ const bar3 = document.querySelector(`#bar3`);
 const bar2 = document.querySelector(`#bar2`);
 const mobileMenu = document.querySelector(`.mobileMenu`);
 const gridBox = document.querySelectorAll(`.gridBox`);
+const login = document.querySelector(`.signInBox`);
+const donate = document.querySelector(`#donate`);
+const close = document.querySelector(`#close`);
 let index = 0;
 
 function fadeInOut() {
@@ -127,4 +130,11 @@ menuBtn.addEventListener(`click`, () => {
   gridBox.forEach((item) => {
     item.classList.toggle(`zoomMobile`);
   });
+});
+
+donate.addEventListener(`click`, () => {
+  login.classList.add(`popUp`);
+});
+close.addEventListener(`click`, () => {
+  login.classList.remove(`popUp`);
 });
