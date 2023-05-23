@@ -1,7 +1,3 @@
-console.log(`hello`);
-
-let dog = `golden retriever`;
-
 function createCard(data) {
   const dogCard = document.querySelector(`#template`);
   const card = document.createElement(`div`);
@@ -30,7 +26,7 @@ function createCard(data) {
               <li>Male Height: <span>${data[0].max_height_male}</span></li>
               <li>Male Weight: <span>${data[0].max_weight_male}</span></li>
               <li>Female Height: <span>${data[0].max_height_female}</span></li>
-              <li>Female Weight: <span>${data[0].max_weight_male}</span></li>
+              <li>Female Weight: <span>${data[0].max_weight_female}</span></li>
             </ul>
           </div>
         </div>
