@@ -1006,6 +1006,7 @@ dropMenuLinks.forEach((link) => {
     console.log(this);
     const formId = link.dataset.formId;
 
-    window.location.href = `/CapStone/forms.html?formId=${formId}`;
+    // window.location.href = `/CapStone/forms.html?formId=${formId}`;
+    window.location.href = `https://kaleblamar.github.io/Capstone/forms.html?formId=${formId}`;
   });
 });
