@@ -144,9 +144,9 @@ const dropMenuLinks = document.querySelectorAll(`.dropLink`);
 dropMenuLinks.forEach((link) => {
   link.addEventListener(`click`, (e) => {
     e.preventDefault();
-    console.log(this);
+
     const formId = link.dataset.formId;
 
-    window.location.href = `/CapStone/forms.html?formId=${formId}`;
+    window.location.href = `/forms.html?formId=${formId}`;
   });
 });
