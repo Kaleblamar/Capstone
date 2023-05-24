@@ -432,6 +432,14 @@ address,
 /* MEDIA QUERIES */
 /* ==================================== */
 
+@media (min-width: 769px) and (max-width: 1301px) {
+  nav ul {
+    justify-content: space-evenly;
+    gap: 0;
+    width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     display: none;

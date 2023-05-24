@@ -22,6 +22,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 #template {
   display: grid;
@@ -412,9 +413,16 @@ address,
 /* ==================================== */
 /* MEDIA QUERIES */
 /* ==================================== */
-@media (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1301px) {
   nav ul {
-    width: 60%;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1343px) {
+  #template {
+    grid-template-columns: 50%;
   }
 }
 
@@ -422,9 +430,6 @@ address,
   nav {
     display: none;
   }
-  /* header {
-    justify-content: center;
-  } */
 
   .hamburgerContainer {
     display: flex;

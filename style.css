@@ -615,39 +615,14 @@ address,
   border-radius: 100%; */
 }
 
-/* .box2 p {
-  align-self: flex-end !important;
-}
-.box2 img {
-  align-self: flex-end !important;
-}
-.box3 p {
-  align-self: flex-start !important;
-}
-.box3 img {
-  height: 350px;
-  align-self: flex-start !important;
-}
-.box4 p {
-  align-self: flex-end !important;
-}
-.box4 img {
-  align-self: flex-end !important;
-  height: 350px;
-} */
-/* .aboutContainer img {
-  width: 50%;
-  z-index: 1;
-  border-radius: 20px;
-  filter: brightness(80%);
-} */
-
 /* ==================================== */
 /* MEDIA QUERIES */
 /* ==================================== */
-@media (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1301px) {
   nav ul {
-    width: 60%;
+    justify-content: space-evenly;
+    gap: 0;
+    width: 80%;
   }
 }
 
