@@ -13,7 +13,8 @@
        <link rel="shortcut icon" href="https://img.icons8.com/3d-fluency/94/dog-footprint.png" alt="dog-footprint" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="board.css" />
-    <script defer src="./script.js"></script>
+    <script defer src="./board.js"></script>
+    <!-- <script defer src="./script.js"></script> -->
     <title>Board of Directors</title>
   </head>
   <body>
@@ -69,10 +70,10 @@
           <a class="animated" href="./forms.html">Forms</a>
 
           <div class="dropDown">
-            <a href="">Surrender Form</a>
-            <a href="">Membership Form</a>
-              <a href="">Rescue</a>
-            <a href="">Volunteer</a>
+           <a class="dropLink" data-form-id="surrenderForm" href="">Surrender Form</a>
+            <a class="dropLink" data-form-id="membershipForm" href="">Membership Form</a>
+            <a class="dropLink" data-form-id="rescueForm" href="">Rescue</a>
+            <a class="dropLink" data-form-id="volunteerForm" href="">Volunteer</a>
           </div>
         </li>
 
@@ -197,6 +198,8 @@
         </div>
       </div>
     </footer>
+
+     <h5 class="copy"> &copy; 2023 James Kaleb Lamar. All rights reserved.</h5>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

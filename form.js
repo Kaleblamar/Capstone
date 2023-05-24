@@ -21,6 +21,20 @@ volMobile.addEventListener(`click`, displayVolMobile);
 membershipMobile.addEventListener(`click`, displayMemMobile);
 surrenderMobile.addEventListener(`click`, displaySurMobile);
 
+const urlParams = new URLSearchParams(window.location.search);
+const formId = urlParams.get("formId");
+console.log(formId);
+
+if (formId === "volunteerForm") {
+  displayVol();
+} else if (formId === "rescueForm") {
+  displayRes();
+} else if (formId === "membershipForm") {
+  displayMem();
+} else if (formId === "surrenderForm") {
+  displaySur();
+}
+
 function displayRes() {
   field.style.display = `flex`;
   res.classList.add(`scale`);
@@ -393,6 +407,7 @@ function displayMem() {
 }
 
 function displaySur() {
+  field.style.display = `flex`;
   sur.classList.add(`scale`);
   vol.classList.remove(`scale`);
   res.classList.remove(`scale`);
@@ -982,3 +997,15 @@ function displayMemMobile() {
           </div>
         </form>`;
 }
+
+const dropMenuLinks = document.querySelectorAll(`.dropLink`);
+
+dropMenuLinks.forEach((link) => {
+  link.addEventListener(`click`, (e) => {
+    e.preventDefault();
+    console.log(this);
+    const formId = link.dataset.formId;
+
+    window.location.href = `/CapStone/forms.html?formId=${formId}`;
+  });
+});

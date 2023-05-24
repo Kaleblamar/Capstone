@@ -518,6 +518,7 @@ li:hover .animated {
   border-radius: 10px;
   padding: 10px;
   transition: 0.5s ease;
+  z-index: 1000;
 }
 
 .dropDownAbout a {
@@ -546,6 +547,11 @@ nav ul li:nth-of-type(3) {
 
 .showDropDown {
   display: flex;
+}
+.copy {
+  color: lightgrey;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* ==================================== */

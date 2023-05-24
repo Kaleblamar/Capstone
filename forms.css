@@ -456,20 +456,22 @@ h3 {
 footer {
   /* width: calc(100% - 100px); */
   width: 100%;
-  height: 400px;
+  height: fit-content;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   margin-top: 50px;
+  /* padding: 20px; */
 }
 
 .footerContainer {
-  width: calc(100% - 100px);
-  height: 400px;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
+  /* padding: 0 20px; */
 }
 .footerContainer::before {
   content: "";
@@ -590,6 +592,11 @@ nav::after {
   left: 0;
   z-index: -1;
   background-image: linear-gradient(to bottom, black, transparent);
+}
+.copy {
+  color: lightgrey;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* ==================================== */

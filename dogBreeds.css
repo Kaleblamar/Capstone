@@ -409,6 +409,11 @@ address,
   /* background-color: white;
   border-radius: 100%; */
 }
+.copy {
+  color: lightgrey;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 /* ==================================== */
 /* MEDIA QUERIES */

@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="./calender.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script defer src="../script.js"></script>
+    <!-- <script defer src="../script.js"></script> -->
     <title>News & Events</title>
   </head>
   <body>
@@ -81,10 +81,16 @@
           <a class="animated" href="../forms.html">Forms</a>
 
           <div class="dropDown">
-            <a href="">Surrender Form</a>
-            <a href="">Membership Form</a>
-            <a href="">Rescue</a>
-            <a href="">Volunteer</a>
+            <a class="dropLink" data-form-id="surrenderForm" href=""
+              >Surrender Form</a
+            >
+            <a class="dropLink" data-form-id="membershipForm" href=""
+              >Membership Form</a
+            >
+            <a class="dropLink" data-form-id="rescueForm" href="">Rescue</a>
+            <a class="dropLink" data-form-id="volunteerForm" href=""
+              >Volunteer</a
+            >
           </div>
         </li>
 
@@ -225,6 +231,7 @@
           </div>
         </div>
       </footer>
+      <h6 class="copy">&copy; 2023 James Kaleb Lamar. All rights reserved.</h6>
     </body>
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
